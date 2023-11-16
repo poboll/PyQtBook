@@ -27,6 +27,7 @@ class Ui_Form(object):
         self.label_3.setObjectName("label_3")
         self.horizontalLayout.addWidget(self.label_3)
         self.username_lineEdit = QtWidgets.QLineEdit(Form)
+        self.username_lineEdit.setStyleSheet("font: 12pt \"宋体\";")
         self.username_lineEdit.setObjectName("username_lineEdit")
         self.horizontalLayout.addWidget(self.username_lineEdit)
         self.verticalLayout.addLayout(self.horizontalLayout)

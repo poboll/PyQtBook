@@ -10,7 +10,7 @@ import pymysql
 class DBHelp:
     instance = None
 
-    def __init__(self, host='127.0.0.1', port=3306, user='root', pwd='123456', db='book', charset='utf8'):
+    def __init__(self, host='tpe0.clusters.zeabur.com', port=30872, user='root', pwd='y498g30fkoN6', db='book', charset='utf8'):
         self._conn = pymysql.connect(host=host, port=port, user=user, passwd=pwd, db=db, charset=charset)
         self._cur = self._conn.cursor()
 

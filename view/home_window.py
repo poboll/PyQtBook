@@ -179,7 +179,7 @@ class HomeWindow(Ui_Form, QWidget):
         count, res = db.query_douban()
 
 
-        for record in res:
+        for record in res[:5]:
             self.book_recommend_tableWidget.insertRow(self.book_recommend_tableWidget.rowCount())
 
             url = str(record[0])
@@ -200,9 +200,6 @@ class HomeWindow(Ui_Form, QWidget):
             self.book_recommend_tableWidget.setItem(self.book_recommend_tableWidget.rowCount() - 1, 3, item)
             item = QTableWidgetItem(str(record[8]))
             self.book_recommend_tableWidget.setItem(self.book_recommend_tableWidget.rowCount() - 1, 4, item)
-
-
-
 
 
 if __name__ == '__main__':
